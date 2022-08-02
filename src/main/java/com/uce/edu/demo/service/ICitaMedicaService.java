@@ -5,4 +5,8 @@ import com.uce.edu.demo.repository.modelo.CitaMedica;
 public interface ICitaMedicaService {
 
 	public void insertar(CitaMedica cm);
+
+	public void actualizar(CitaMedica cm);
+
+	public CitaMedica buscarPorNumero(String numero);
 }

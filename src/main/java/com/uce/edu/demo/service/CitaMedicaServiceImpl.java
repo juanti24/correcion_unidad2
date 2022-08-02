@@ -19,4 +19,18 @@ public class CitaMedicaServiceImpl implements ICitaMedicaService{
 		
 	}
 
+
+	@Override
+	public void actualizar(CitaMedica cm) {
+		this.icitaMedicaRepo.actualizar(cm);
+		
+	}
+
+
+	@Override
+	public CitaMedica buscarPorNumero(String numero) {
+		// TODO Auto-generated method stub
+		return this.icitaMedicaRepo.buscarPorNumero(numero);
+	}
+
 }

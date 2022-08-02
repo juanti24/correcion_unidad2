@@ -46,4 +46,10 @@ public class PacienteServiceImpl implements IPacienteService{
 		return 	this.ipacienteRepo.reportePaciente(fecha, genero);
 	}
 
+	@Override
+	public Paciente buscarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+		return this.ipacienteRepo.buscarPorCedula(cedula);
+	}
+
 }

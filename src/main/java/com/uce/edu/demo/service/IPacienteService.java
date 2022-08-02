@@ -16,5 +16,7 @@ public interface IPacienteService {
 
 	public void eliminar(Integer id);
 	
+	public Paciente buscarPorCedula(String cedula);
+	
 	public List<PacienteSencillo> reportePaciente(LocalDate fecha, String genero);
 }
